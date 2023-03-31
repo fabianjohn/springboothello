@@ -1,0 +1,34 @@
+<div class="new-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<h5>Current Jobs to apply</h5>
+
+
+<div class="view" th:each="listEmployer: ${listEmployer }" style="font-size: 20;">
+   <ul>
+     Company Name:<b> <span th:utext="${listEmployer.companyName}"></span></b><br>
+     Job Title: <b><span th:utext="${listEmployer.jobTitle}"></span></b><br>
+     Job Location:<b><span th:utext="${listEmployer.jobLocation}"></span></b><br>
+      <h5><a th:href="@{|/apply?jobTitle=${listEmployer.jobTitle}&jobLocation=${listEmployer.jobLocation}|}">Apply</a></h3>
+			
+    </ul> 
+</div>
+	
+	<div class="view" th:each="listjob: ${listjob }" style="font-size: 20;">
+		
+		
+		<ul>
+			Job Code:<b><span th:utext="${listjob.jobId}"></span></b></br>
+			Job Title:<b><span th:utext="${listjob.jobTitle}"></span></b><br>
+			 Job Location:<b><span th:utext="${listjob.jobLocation}"></span></b><br>
+		 	
+			 <h5><a th:href="@{|/apply?jobId=${listjob.jobId}&jobTitle=${listjob.jobTitle}&jobLocation=${listjob.jobLocation}|}">Apply</a></h3>
+			
+
+		</ul>
+			
+	</div>
+
+
+</div>

@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="ISO-8859-1">
-<title>Registration</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container text-center" style="width: 50%; border: 1px solid black">
-    <div style="text-align: center">
-        <h1>Register</h1>
-    </div>
+<div class="register-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
         
 <form  th:action= "@{/save}" th:object="${customers}" method="post">
     
@@ -57,5 +43,3 @@ and open the template in the editor.
 
 </div>
 
-    </body>
-</html>

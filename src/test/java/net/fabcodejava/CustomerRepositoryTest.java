@@ -35,22 +35,22 @@ public class CustomerRepositoryTest {
 	@Autowired
 	private TestEntityManager entityManager;
 	
-	/*
+	
 	@Test
 	public void testCreateCustomer() {
 		
 		Customers user = new Customers();
-		user.setFullName("Fabian J I");
-		user.setEmail("fabj@gmail.com");
-		user.setPhoneNo("08148360");
-		user.setPassword("john123");
+		user.setFullName("Fab J I");
+		user.setEmail("faj@gmail.com");
+		user.setPhoneNo("0814830");
+		user.setPassword("joh123");
 		
 		Customers savedCustomers = repo.save(user);
 		Customers existCustomers = entityManager.find(Customers.class, savedCustomers.getId());
 		
 		assertThat(existCustomers.getEmail()).isEqualTo(user.getEmail());
 	}
-        */
+        
 	
 	//new project rest
         /*

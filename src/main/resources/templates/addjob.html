@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	
+    <link rel = "stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+</head>
+<body>
+	
+	    <th:block  th:include="/header"></th:block>
+		<th:block  th:include="/menu"></th:block><br><br><br>
+		<th:block  th:include="/jobform"></th:block>
+		 
+
+</body>
+</html>

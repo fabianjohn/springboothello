@@ -1,0 +1,85 @@
+<div class="slide-container"
+   xmlns:th="http://www.thymeleaf.org"
+   xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" >
+   
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <div class="image-body-text"><h1>About PcRecruit</h1>
+<p style="background-color:#f1f1f1; color: black">PcRecruit Limited commenced business in the year 2022 as a personnel outsourcing company with a focus on retail sales staff, and services and support staff. Over the past years, the company has built a record of excellent service with its clients. </p><br><br><br>
+            <a href="#" class="learn-more">Get Started<i class="fa fa-caret-right"></i></a>
+             </div>
+        <img src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2020/07/09112144/human-resource-manager.jpg" style="width: 100%" height="500px">
+        <div class="text">Caption Text</div>
+
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <div class="image-body-text"><h1 style="color:black">We absorb your employment risks and give you Peace of Mind</h1><br><br><br>
+            <a href="#" class="learn-more">Get Started<i class="fa fa-caret-right"></i></a>
+             </div>
+        <img src="https://www.aihr.com/wp-content/uploads/HRM-Basics-Featured.jpg" style="width:100%" height="500px">
+        <div class="text">Caption Two</div>
+
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+         <div class="image-body-text"><h1 style="background-color:#f1f1f1; color: black">Prevent government penalties & protect your profits with PcRecruit.</h1><br><br><br>
+        <a href="#" class="learn-more">Get Started<i class="fa fa-caret-right"></i></a>
+         </div>
+        <img src="https://www.schellhammerbusinessschool.com/wp-content/uploads/Online-Human-Resource-Management.jpg" style="width:100%" height="500px">
+        <div class="text">Caption Three</div>
+
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <div class="image-body-text"><h1>Payroll Services for your peace of mind</h1>
+        <p>PcRecruit Payroll Management Services lets you focus on other important jobs that come with running a business, reduces your operational costs and saves you time.</p><br><br><br>
+            <a href="#" class="learn-more">Get Started<i class="fa fa-caret-right"></i></a>
+             </div>
+        <img src="https://assets-global.website-files.com/601cea0180c178b943d0eccc/62a2c2cfbb539f8273682db0_Globalization%20in%20Human%20Resource%20Management.png" style="width:100%" height="500px">
+        <div class="text">Caption Three</div>
+
+    </div>
+    
+
+</div>
+
+<br>
+
+<div style="text-align: center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+   
+   <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++){
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 10000); // Change image every 5 seconds
+    }
+
+</script>
+
+   
+</div>

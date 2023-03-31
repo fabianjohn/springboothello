@@ -2,15 +2,25 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>Hello</title>
+        <title>Register successful</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+        
     </head>
     <body>
+    	<th:block  th:include="/header"></th:block>
         <div class="container text-center">
             
             <h1 th:text="${message}"></h1>
             <h2><a th:href="@{/login}">Click here to login</a></h2>
         </div>
+        <br>
+        
+        <form  th:action="@{/getjob}">
+	enter id<input type="text" name="id">
+	<input type="submit" value="submit">
+
+ </form>
+       
     </body>
 </html>

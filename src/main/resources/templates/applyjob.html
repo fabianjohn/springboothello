@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Applied Job</title>
+</head>
+<body>
+	<h2>View jobs applied</h2>
+	
+	<h4>	Welcome <b>[[${#request.userPrincipal.principal.nameFull}]]</b></h4>
+	  <div class="view" th:each="joblist: ${Joblist }" style="font-size: 20;"> 
+		
+		
+		<ul>
+			Company Name: <span></span><br>
+			Job Code:<b><span th:utext="${joblist.code}"></span></b></br>
+			Job Title:<b><span th:utext="${joblist.jobTitle}"></span></b><br>
+			 Job Location:<b><span th:utext="${joblist.jobLocation}"></span></b><br>
+		 	<li>Requirement: <span></span></li><br>
+		 	
+
+		</ul>
+			
+	</div>
+<!--  	<div class="view" th:each="listjob: ${listjob }" style="font-size: 20;"> --
+		
+		
+		<ul>
+			Company Name: <span></span><br>
+			Job Code:<b><span th:utext="${listjob.jobId}"></span></b></br>
+			Job Title:<b><span th:utext="${listjob.jobTitle}"></span></b><br>
+			 Job Location:<b><span th:utext="${listjob.jobLocation}"></span></b><br>
+		 	<li>Requirement: <span></span></li><br>
+		 	<li>
+			 <h3><a th:href="@{|/apply?jobId=${listjob.jobId}|}">Apply</a></h3>
+			 </li>
+
+		</ul>
+			
+	</div>
+	-->
+
+</body>
+</html>

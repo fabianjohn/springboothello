@@ -1,0 +1,37 @@
+<div class="finejob-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+   <div class="site-name">PcRecruit</div>
+  
+   <form method="post" th:action="@{/getjob}">
+   			<div id="jobsearch" style=" position: absolute; top: 250px" >
+            <div class="inner-div" >
+                <input type="search" placeholder="Job tittle" style="height: 70px; width: 110%">
+            </div>
+            <div class="inner-div">
+            
+            <select style="height: 70px; width: 110%">
+            	<option th:each="country: ${countries}"
+            			th:text="${country.name}">Location
+            			
+            	</option>
+            </select>
+               
+            </div>
+                <div class="inner-div">
+                <input type="text" placeholder="Salary min" style="height: 70px; width: 110%">
+            </div>
+                <div class="inner-div">
+                <input type="text" placeholder="Salary max" style="height: 70px; width: 110%">
+            </div>
+            <div class="inner-div">
+                <button type="text" class="btn btn-primary" style="height: 70px; width: 100%" >Search</button>
+                  
+            </div>
+            
+        </div>
+   
+   </form>
+   
+</div>

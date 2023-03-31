@@ -1,0 +1,73 @@
+<div class="register-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+        
+<form  th:action= "@{/saveApply}" th:object="${application}" method="post">
+    
+
+      <div class="col-sm-8">
+                <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-16">
+				<input type="hidden" th:field="*{id}" />
+                                <input type="text" th:field="*{name}" class="form-control" placeholder="Name" name="name" required minlenght="2" maxlength="30" />
+                            </div>
+                </div>
+
+                <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{email}" class="form-control" placeholder="Email" name="email" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{phoneNo}" class="form-control" placeholder="Phone number" name="phoneNo" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{qualification}" class="form-control" placeholder="Qualification" name="qualification" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{additionalQtion}" class="form-control" placeholder="Addqualification" name="additionalQtion"  minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                 <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{address}" class="form-control" placeholder="Address" name="address" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                 <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+				<input type="text" th:field="*{StateOfResident}" class="form-control" placeholder="State of resident" name="stateOfResident" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                 <div class="form-group row">
+			<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+                            
+			Upload Cv<input type="file" th:field="*{attachement}" class="form-control" placeholder="upload cv" name="attachement" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+
+        <div  >
+         <button type="submit" class="btn btn-info">Save</button>
+        </div>
+      </div>       
+</form>
+
+
+</div>

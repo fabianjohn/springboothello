@@ -1,0 +1,74 @@
+<div class="showbyid-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+	<h1>Creat your resume</h1>
+	
+	
+	
+<ul>
+	JobId:<b><span th:utext="${obj.jobId}"></span></b><br>
+	Job Title:<b><span th:utext="${obj.jobTitle}"></span></b><br>
+	Job Location: <b><span th:utext="${obj.jobLocation}"></span></b>
+	
+</ul>	
+
+<div style="text-align:left; border: 1px solid black; width: 50%">
+	<h3>PERSONAL PROFILE</h3>
+	<form action="">
+	Full Name<input type="text" name="" >
+	Gender<input type="text" name=""><br><br>
+	Nationality<input type="text" name="">
+	State Of Origen<input type="text" name=""><br><br>
+	Marital Status<input type="text" name="">
+	<button type="submit">Save</button>
+	</form>
+	
+
+</div>
+<br>
+<div style="text-align:left; border: 1px solid black; width: 50%">
+	<h3>EDUCATIONAL QUALIFICATION</h3>
+	<form action="">
+	Institution<input type="text" name="" >
+	Year<input type="date" name=""><br><br>
+	Grade<input type="text" name="">
+	Other<input type="text" name=""><br><br>
+	<button type="submit">Save</button>
+	</form>
+	
+
+</div>
+<br>
+
+<div style="text-align:left; border: 1px solid black; width: 50%">
+	<h3>WORK EXPERIENCE</h3>
+	<form action="">
+	Company<input type="text" name="" >
+	Job Title<input type="text" name=""><br><br>
+	Start<input type="date" name="">
+	End<input type="date" name=""><br><br>
+	<button type="submit">Save</button>
+	</form>
+	
+
+</div>
+<br>
+<div style="text-align:left; border: 1px solid black; width: 50%">
+	<h3>UPLOAD YOUR CV</h3>
+	<form action="">
+	Upload CV<input type="file" name="" >
+	
+	<button type="submit">Save</button>
+	</form>
+	
+
+</div>
+<br><br>
+<div style="text-align:left; border: 1px solid black; width: 50%">
+	
+	
+
+</div>
+
+</div>

@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+.social .fa {
+  padding: 20px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social a{
+	margin-right: 10px;
+}
+/* Add a hover effect if you want */
+.social .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.social .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.social .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

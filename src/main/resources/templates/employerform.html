@@ -1,0 +1,79 @@
+<div class="register-container"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+      
+      <h2 style="color: black;">EMPLOYERFORM</h1>
+      
+		<p style="position: absolute; right: 30px; top:-7%; text-decoration: none; "><a href="addjob">POST A JOB</a></p>
+ 
+   <form  th:action= "@{/savedEmp}" th:object="${employer}" method="post">
+    
+
+       <div class="col-sm-8">  
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-16">
+  <!--            		
+						 	<input type="hidden" th:field="*{employerId}" />
+	-->	  				
+                               <input type="text" th:field="*{companyName}" class="form-control" placeholder="Company Name" name="companyName" required minlenght="2" maxlength="30" />
+                           
+                            </div>
+                </div>
+
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                           <div class="col-8">
+							<input type="text" th:field="*{address}" class="form-control" placeholder="Address" name="address" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{industry}" class="form-control" placeholder="Industry" name="industry" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+               
+               	 <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{jobTitle}" class="form-control" placeholder="job title" name="jobTitle" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{jobLocation}" class="form-control" placeholder="job location" name="jobLocation" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{gender}" class="form-control" placeholder="Gender" name="gender" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{contactPerson}" class="form-control" placeholder="Contact Person" name="contactPerson" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+                <div class="form-group row">
+					<label class="col-form-label col-4"></label>
+                            <div class="col-8">
+								<input type="text" th:field="*{phoneNo}" class="form-control" placeholder="Phone No" name="phoneNo" required minlenght="2" maxlength="30"/>
+                            </div>
+                </div>
+                
+
+        <div >
+         <button type="submit" class="btn btn-info" style="font-size: 20px; float: right; margin-bottom: 40px">Save</button>
+        </div>
+      </div> 
+        
+</form>
+
+</div>

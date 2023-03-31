@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>PcRecruit home</title>
+		 <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+		  <link rel="stylesheet" type="text/css" th:href="@{/media.css}" />
+		  <!--
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		-->
+	</head>
+<body>
+
+<th:block  th:include="/header"></th:block>
+<th:block  th:include="/menu"></th:block><br><br><br>
+<th:block  th:include="/slide"></th:block>
+<th:block  th:include="/middle"></th:block>
+<th:block  th:include="/servi"></th:block> 
+<th:block  th:include="/servicsum"></th:block> 
+<th:block  th:include="/footer"></th:block> 
+
+</body>
+</html>
